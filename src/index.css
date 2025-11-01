@@ -110,15 +110,19 @@ body{
 }
 
 
-.client_logo {
+.client-logo {
   margin: 0 auto;
-  width: 90%;
-  max-width: 1000px;
+  overflow: hidden;
+  padding: 40px 0;
+  div{
+    margin-left: 50px;
+  }
+  /* max-width: 1000px; */
 }
 
-.client_logo .slick-slide {
+/* .client_logo .slick-slide {
   padding: 10px;
-}
+} */
 
 .client_logo img {
   transition: transform 0.3s ease;

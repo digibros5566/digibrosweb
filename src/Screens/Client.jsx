@@ -2,14 +2,16 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
-
+import Marquee from "react-fast-marquee";
+import { Container } from "react-bootstrap";
 
 const Client = () =>{
   const logos = [
   { logo: "/arar.png" },
   { logo: "/anuj.png" },
-  { logo: "/goldenstar.png" }
+  { logo: "/goldenstar.png" },
+  { logo: "/sport.jpg" },
+  { logo: "/nivaaran.jpg" },
 ];
 
     const logoSettings = {
@@ -65,8 +67,8 @@ const Client = () =>{
                 <p style={{ color: "#aaa", marginBottom: "40px" }}>
                   Trusted by brands who believe in growth.
                 </p>
-                <div className="client_logo" >
-                  <Slider {...logoSettings} >
+                <Container>
+                  <Marquee className="client-logo" gradient={false} speed={50} >
                     {logos.map((w, i) => (
                       <div
                         key={i}
@@ -88,8 +90,8 @@ const Client = () =>{
                         />
                       </div>
                     ))}
-                  </Slider>
-                </div>
+                  </Marquee>
+                </Container>
               </section>
     )
 }
