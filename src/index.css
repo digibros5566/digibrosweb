@@ -67,6 +67,10 @@ body{
 }
 
 @media (max-width:540px){
+  .hero{
+  max-height: 100vh;
+}
+
   #hero{
     display: grid;
     grid-template-areas:'img' 'hero-text' ;
