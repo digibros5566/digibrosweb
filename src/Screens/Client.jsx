@@ -1,9 +1,16 @@
 
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 
+
+
 const Client = () =>{
+  const logos = [
+  { logo: "/arar.png" },
+  { logo: "/anuj.png" },
+  { logo: "/goldenstar.png" }
+];
 
     const logoSettings = {
         dots: false,
@@ -12,7 +19,7 @@ const Client = () =>{
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 0,
+        autoplaySpeed: 2000,
         cssEase: "linear",
         arrows: false,
         centerMode: true,
@@ -60,11 +67,7 @@ const Client = () =>{
                 </p>
                 <div className="client_logo" >
                   <Slider {...logoSettings} >
-                    {[
-                      { logo: "/arar.png" },
-                      { logo: "/anuj.png" },
-                      { logo : "/goldenstar.png"}
-                    ].map((w, i) => (
+                    {logos.map((w, i) => (
                       <div
                         key={i}
                         style={{
