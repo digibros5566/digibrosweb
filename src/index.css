@@ -146,7 +146,7 @@ body{
       padding: 15px;
     }
     button{
-      margin-left: 40%;
+      width: 100%;
     }
   }
 }
